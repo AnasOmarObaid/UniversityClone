@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <!-- Meta query -->
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- Google Fonts-->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@500&family=Roboto:wght@500&display=swap"
+            rel="stylesheet" />
+
+      <!-- css style -->
+      <link rel="stylesheet" href="asset/css/style.css" />
+
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+      <!-- Web site Title -->
+      <title>Al-Furqan University of Islamic and Modern Studies | Register </title>
+</head>
+
+<body>
+      <!-- make navbar -->
+      <nav class="navbar w-100" id="navbar">
+            <div class="container">
+                  <div class="navbar-contents w-100 d-flex justify-content-space-between align-item-center">
+                        <!--Logo-->
+                        <div class="logo">
+                              <a href="./index.html" class="d-block">
+                                    <img class="d-block w-100 border-radius-50" src="images/logo.png" alt="Logo" />
+                              </a>
+                        </div>
+
+                        <!--navigation-items-->
+                        <div class="navigation-items" id="navigation-items">
+                              <ul class="unorder-list d-flex" id="unorder-list">
+                                    <li class="nav-link mr-1">
+                                          <a href="index.html" class="text-decoration-none text-white">Home</a>
+                                    </li>
+                                    <li class="nav-link mr-1">
+                                          <a href="about.html" class="text-decoration-none text-white">About</a>
+                                    </li>
+                                    <li class="nav-link mr-1">
+                                          <a href="contact.html" class="text-decoration-none text-white">Contact</a>
+                                    </li>
+                                    <li class="nav-link mr-1">
+                                          <a href="announcement.html" class="text-decoration-none text-white">Announcements</a>
+                                    </li>
+                                    <li class="nav-link">
+                                          <a href="register.html"
+                                                class="text-decoration-none text-white active">Register Now</a>
+                                    </li>
+                              </ul>
+                        </div>
+
+                        <!--hamburger-->
+                        <div class="hamburger" id="hamburger">
+                              <span id="openHam">&#9776;</span>
+                              <span id="closeHam">&#x2716;</span>
+                        </div>
+                  </div>
+            </div>
+      </nav>
+
+      <!--register section -->
+      <section class="register">
+
+            <div class="container">
+                  <!-- contact form -->
+                  <div class="register-form pt-5 pb-5">
+                        <form class="form">
+                             <div class="w-100 d-flex justify-content-center"> <img src="images/logo_v2.jpg" alt="Logo" class="d-block" width="150"></div>
+                              <div class="form-floating mb-2 mt-2">
+                                    <input class="form-control" type="text"  name="user_id"
+                                          placeholder="Enter Your ID" />
+                              </div>
+                             
+                              <div class="form-floating mb-2">
+                                    <input class="form-control" type="password" name="password"
+                                          placeholder="Enter Your password" />
+                              </div>
+                             
+                              <div class="form-group">
+                                    <button class="btn btn-success d-block w-100" type="submit">
+                                          <i class="fa-solid fa-right-to-bracket fa-fw"></i> Register
+                                    </button>
+
+                                    <hr class="mt-1 mb-1"/>
+
+                                    <button class="btn btn-danger d-block w-100 mb-1" type="submit">
+                                          Google  <i class="fa-brands fa-google"></i>
+                                    </button>
+
+                                    <button class="btn btn-primary d-block w-100" type="submit">
+                                           Facebook <i class="fa-brands fa-facebook"></i>
+                                    </button>
+
+                        </form>
+
+                  </div>
+            </div>
+
+      </section>
+
+      <!--- Footer  -->
+      <section class="footer pt-5 pb-5">
+            <div class="container">
+                  <div class="wrapper">
+                        <div class="title">
+                              <img src="images/logo.png" alt="Logo" width="160" />
+                        </div>
+                        <div class="links">
+                              <h4>Quick Links</h4>
+                              <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About us</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="announcement.html">Announcement</a></li>
+                                    <li><a href="register.html">Register</a></li>
+                              </ul>
+                        </div>
+                        <div class="contact text-center">
+                              <h4>Contact Us</h4>
+                              <a href="mailto:al-Furqan@outlook.com">AL-Furqan.edu@outlook.com</a>
+                        </div>
+                  </div>
+                  <hr />
+                  <div class="info">
+                        <div class="copy">
+                              <span>©2024 Al-Furqan University of Islamic and Modern Studies. All
+                                    Rights Reserved.</span>
+                        </div>
+                        <div class="terms">
+                              <span>Terms of use | Privacy Environmental policy</span>
+                        </div>
+                  </div>
+            </div>
+      </section>
+
+      <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                  // when click the hamburger icon show the navbar
+                  const menu_btn = document.getElementById("hamburger");
+                  const navbar_links = document.getElementById("unorder-list");
+                  menu_btn.addEventListener("click", () => {
+                        navbar_links.classList.toggle("show");
+                  });
+
+                  // when scroll the window change the background of the navbar
+                  const navbar = document.getElementById("navbar");
+                  window.addEventListener("scroll", () => {
+                        if (window.scrollY > 50) navbar.classList.add("scrolled");
+                        else navbar.classList.remove("scrolled");
+                  });
+            });
+      </script>
+</body>
+
+</html>
