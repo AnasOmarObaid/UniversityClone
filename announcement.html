@@ -17,18 +17,19 @@
     <link rel="stylesheet" href="asset/css/style.css" />
 
     <!-- Web site Title -->
-    <title>Al-Furqan University of Islamic and Modern Studies | Announcement </title>
+    <title>Imam Mohammad Ibn Saud Islamic University | Announcement </title>
 </head>
 
 <body>
+
     <!-- make navbar -->
-    <nav class="navbar w-100 announcement-navbar id=" navbar">
+    <nav class="navbar w-100 announcement-navbar" id=" navbar">
         <div class="container">
             <div class="navbar-contents w-100 d-flex justify-content-space-between align-item-center">
                 <!--Logo-->
                 <div class="logo">
                     <a href="./index.html" class="d-block">
-                        <img class="d-block w-100 border-radius-50" src="images/logo.png" alt="Logo" />
+                        <img class="d-block w-100" src="images/logo.png" alt="Logo" />
                     </a>
                 </div>
 
@@ -36,19 +37,22 @@
                 <div class="navigation-items" id="navigation-items">
                     <ul class="unorder-list d-flex" id="unorder-list">
                         <li class="nav-link mr-1">
-                            <a href="index.html" class="text-decoration-none text-white">Home</a>
+                            <a href="index.html" class="text-decoration-none text-white">الرئيسية</a>
                         </li>
                         <li class="nav-link mr-1">
-                            <a href="about.html" class="text-decoration-none text-white">About</a>
+                            <a href="about.html" class="text-decoration-none text-white">عن الجامعة</a>
                         </li>
                         <li class="nav-link mr-1">
-                            <a href="contact.html" class="text-decoration-none text-white">Contact</a>
+                            <a href="contact.html" class="text-decoration-none text-white">تواصل</a>
                         </li>
                         <li class="nav-link mr-1">
-                            <a href="announcement.html" class="text-decoration-none text-white active">Announcements</a>
+                            <a href="announcement.html" class="text-decoration-none text-white active">الإعلانات</a>
                         </li>
-                        <li class="nav-link">
-                            <a href="register.html" class="text-decoration-none text-white">Register Now</a>
+                        <li class="nav-link mr-1">
+                            <a href="student-marks.html" class="text-decoration-none text-white">درجات الطلاب</a>
+                      </li>
+                        <li class="nav-link mr-1">
+                            <a href="register.html" class="text-decoration-none text-white">تسجيل</a>
                         </li>
                     </ul>
                 </div>
@@ -67,63 +71,64 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-12 col-lg-6" style="padding-right: 16px;">
-                    <h2 class="leader">Employee Announcements</h2>
-                    <form class="announcementForm">
-                        <input type="text" id="announcementTitle" class="form-control" placeholder="Announcement Title"
+                <div class="col-12 col-lg-6" style="padding-left: 16px;">
+                    <h2 class="leader">اضافة إعلانات </h2>
+                    <form class="announcementForm" id="announcementForm">
+                        <input type="text" id="announcementTitle" class="form-control" placeholder="عنوان الإعلان"
                             required />
-                        <textarea id="announcementContent" class="form-control" placeholder="Announcement Content"
+                        <textarea id="announcementContent" class="form-control" placeholder="محتوى الإعلان"
                             required style="height: 150px;"></textarea>
                         <input class="form-control" type="url" id="announcementImage"
-                            placeholder="Image URL (optional)" />
-                        <button type="submit" class="mt-1 d-block w-100">Post Announcement</button>
+                            placeholder="رابط  الصورة (إختياري)" />
+                        <button type="submit" class="mt-1 d-block w-100">نشر الإعلان</button>
                     </form>
                 </div>
 
-               <div class="col-12 col-lg-6">
-                <div class="form-content">
-                    <h3>Recent Announcements</h3>
-                    <ul id="announcementsList" class="unorder-list"></ul>
+                <div class="col-12 col-lg-6">
+                    <h2 class="leader text-center pb-1">إعلانات الموظفين</h2>
+                    <section id="announcementsList"></section>
                 </div>
-               </div>
+
             </div>
         </div>
     </section>
 
+
     <!--- Footer  -->
     <section class="footer pt-5 pb-5">
-        <div class="container">
-            <div class="wrapper">
-                <div class="title">
-                    <img src="images/logo.png" alt="Logo" width="160" />
-                </div>
-                <div class="links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="announcement.html">Announcement</a></li>
-                        <li><a href="register.html">Register</a></li>
-                    </ul>
-                </div>
-                <div class="contact text-center">
-                    <h4>Contact Us</h4>
-                    <a href="mailto:al-Furqan@outlook.com">AL-Furqan.edu@outlook.com</a>
-                </div>
+            <div class="container">
+                  <div class="wrapper">
+                        <div class="title">
+                              <img src="images/logo.png" alt="Logo" width="160" />
+                        </div>
+                        <div class="links">
+                             
+                              <ul>
+                                    <li><a href="index.html">الرئيسية</a></li>
+                                    <li><a href="about.html">عن الجامعة</a></li>
+                                    <li><a href="contact.html">تواصل</a></li>
+                                    <li><a href="announcement.html">الإعلانات</a></li>
+                                    <li><a href="student-marks.html">درجات الطلاب</a></li>
+                                    <li><a href="register.html">تسجيل</a></li>
+                              </ul>
+                        </div>
+                        <div class="contact text-center">
+                              <h4>تابعنا على</h4>
+                             <li>  <a href="https://x.com/IMSIU_edu_sa?mx=2">https://x.com/IMSIU_edu_sa?mx=2</a></li>
+                              
+                        </div>
+                  </div>
+                  <hr />
+                  <div class="info">
+                        <div class="copy">
+                              <span>جميع الحقوق محفوظة لجامعة الإمام محمد بن سعود الإسلامية 1446 هـ - 2025 م</span>
+                        </div>
+                        <div class="terms">
+                              <span>السياسات | تواصل معنا | الوصول للجامعة | الأرشيف | خريطة الموقع</span>
+                        </div>
+                  </div>
             </div>
-            <hr />
-            <div class="info">
-                <div class="copy">
-                    <span>©2024 Al-Furqan University of Islamic and Modern Studies. All
-                        Rights Reserved.</span>
-                </div>
-                <div class="terms">
-                    <span>Terms of use | Privacy Environmental policy</span>
-                </div>
-            </div>
-        </div>
-    </section>
+      </section>
 
     <script src="asset/js/announcements.js"></script>
 </body>

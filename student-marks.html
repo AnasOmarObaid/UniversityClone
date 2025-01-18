@@ -19,12 +19,13 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
       <!-- Web site Title -->
-      <title>Imam Mohammad Ibn Saud Islamic University | Register </title>
+      <title>Imam Mohammad Ibn Saud Islamic University | Student Marks</title>
 </head>
 
 <body>
+
       <!-- make navbar -->
-     <nav class="navbar w-100" id="navbar">
+      <nav class="navbar w-100 announcement-navbar" id="navbar">
             <div class="container">
                   <div class="navbar-contents w-100 d-flex justify-content-space-between align-item-center">
                         <!--Logo-->
@@ -47,13 +48,15 @@
                                           <a href="contact.html" class="text-decoration-none text-white">تواصل</a>
                                     </li>
                                     <li class="nav-link mr-1">
-                                          <a href="announcement.html" class="text-decoration-none text-white">الإعلانات</a>
+                                          <a href="announcement.html"
+                                                class="text-decoration-none text-white">الإعلانات</a>
                                     </li>
                                     <li class="nav-link mr-1">
-                                          <a href="student-marks.html" class="text-decoration-none text-white">درجات الطلاب</a>
+                                          <a href="student-marks.html"
+                                                class="text-decoration-none text-white active">درجات الطلاب</a>
                                     </li>
                                     <li class="nav-link mr-1">
-                                          <a href="register.html" class="text-decoration-none text-white active">تسجيل</a>
+                                          <a href="register.html" class="text-decoration-none text-white">تسجيل</a>
                                     </li>
                               </ul>
                         </div>
@@ -67,45 +70,65 @@
             </div>
       </nav>
 
-      <!--register section -->
-      <section class="register">
 
+      <!-- contact form -->
+      <section class="pt-5 pb-5">
             <div class="container">
-                  <!-- contact form -->
-                  <div class="register-form pt-5 pb-5">
-                        <form class="form">
-                             <div class="w-100 d-flex justify-content-center"> <img src="images/logo.png" alt="Logo" class="d-block" width="150"></div>
-                              <div class="form-floating mb-2 mt-2">
-                                    <input class="form-control" type="text"  name="user_id"
-                                          placeholder="أدخل رقمك الجامعي" />
-                              </div>
-                             
-                              <div class="form-floating mb-2">
-                                    <input class="form-control" type="password" name="password"
-                                          placeholder="أدخل كلمة السر" />
-                              </div>
-                             
-                              <div class="form-group">
-                                    <button class="btn btn-success d-block w-100" type="submit">
-                                          <i class="fa-solid fa-right-to-bracket fa-fw"></i> تسجيل دخول
-                                    </button>
+                  <div class="row">
+                        <div class="col-12 col-lg-6">
+                              <h1 class="w-100 text-center mb-2">اضافة درجات للطلاب</h1>
+                              <form class="form" id='addMarkForm'>
 
-                                    <hr class="mt-1 mb-1"/>
+                                    <div class="form-floating mb-2">
+                                          <input class="form-control" type="text" id="student-name" name="student-name"
+                                                placeholder="أكتب اسم الطالب" required />
+                                    </div>
 
-                                    <button class="btn btn-danger d-block w-100 mb-1" type="submit">
-                                          Google  <i class="fa-brands fa-google"></i>
-                                    </button>
 
-                                    <button class="btn btn-primary d-block w-100" type="submit">
-                                           Facebook <i class="fa-brands fa-facebook"></i>
-                                    </button>
+                                    <div class="form-floating mb-2">
+                                          <input type="text" class="form-control" id="student-id" name="student-id"
+                                                placeholder="أدخل رقم الطالب" required>
+                                    </div>
 
-                        </form>
+                                    <div class="form-floating mb-2">
+                                          <input type="text" class="form-control" id="subject" class="form-floating"
+                                                placeholder="أدخل اسم المادة" name="subject" required>
+                                    </div>
 
+                                    <div class="form-floating mb-2">
+                                          <input type="number" class="form-control" id="mark" name="mark"
+                                                placeholder="أدخل الدرجة" min="0" max="100" required>
+                                    </div>
+
+                                    <input type="submit" class="btn btn-success w-100" value="Add Mark">
+                              </form>
+                        </div>
+
+                        <div class="col-12 col-lg-6">
+                              <!-- Add the table to display the marks -->
+                              <section class="marks-table">
+                                    <div class="container">
+                                          <h1 class="w-100 text-center mb-2">جدول درجات الطلاب</h1>
+                                          <table id="marksTable">
+                                                <thead>
+                                                      <tr>
+                                                            <th>اسم الطالب</th>
+                                                            <th>رقم الطالب</th>
+                                                            <th>اسم المادة</th>
+                                                            <th>الدرجة</th>
+                                                      </tr>
+                                                </thead>
+                                                <tbody id="marksBody">
+                                                      <!-- Marks will be dynamically added here -->
+                                                </tbody>
+                                          </table>
+                                    </div>
+                              </section>
+                        </div>
                   </div>
             </div>
-
       </section>
+
 
       <!--- Footer  -->
       <section class="footer pt-5 pb-5">
@@ -115,7 +138,7 @@
                               <img src="images/logo.png" alt="Logo" width="160" />
                         </div>
                         <div class="links">
-                             
+
                               <ul>
                                     <li><a href="index.html">الرئيسية</a></li>
                                     <li><a href="about.html">عن الجامعة</a></li>
@@ -127,8 +150,8 @@
                         </div>
                         <div class="contact text-center">
                               <h4>تابعنا على</h4>
-                             <li>  <a href="https://x.com/IMSIU_edu_sa?mx=2">https://x.com/IMSIU_edu_sa?mx=2</a></li>
-                             
+                              <li> <a href="https://x.com/IMSIU_edu_sa?mx=2">https://x.com/IMSIU_edu_sa?mx=2</a></li>
+
                         </div>
                   </div>
                   <hr />
@@ -160,6 +183,9 @@
                   });
             });
       </script>
+      <!-- script to add the marks for student -->
+
+      <script src="asset/js/student-marks.js"></script>
 </body>
 
 </html>
